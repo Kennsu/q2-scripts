@@ -14,7 +14,7 @@ METADATA="/bigdata/forKen/preeclamsia/metadataPE.txt"
 DEPTH=4397
 
 # Taxonomy Analysis #
-REF_TAXONOMY='/bigdata/forKen/ClassifierTraining/taxonomy.qza'
+REF_TAXONOMY='/bigdata/forKen/ClassifierTraining/ref-taxonomy.qza'
 OTUS99='/bigdata/forKen/ClassifierTraining/99_otus.qza'
 PRIMER_F="ACTCCTACGGGAGGCAGCAG"
 PRIMER_R="GGACTACHVGGGTWTCTAAT"

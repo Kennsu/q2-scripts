@@ -5,7 +5,7 @@
 ########## QIIME2 'Moving Pictures' Pipeline ##########
 
 ######Activate QIIME2 #####
-source activate qiime2-2018.2
+source activate qiime2-2018.4
 ###### VARIABLES ##########
 
 METADATA="/bigdata/forKen/preeclamsia/metadataPE.txt"
@@ -79,7 +79,7 @@ TRUNC=275
   --i-sequences $OTUS99 \
   --p-f-primer $PRIMER_F \
   --p-r-primer $PRIMER_R \
-  --p-TRUNC-len $TRUNC \
+  --p-trunc-len $TRUNC \
   --o-reads ref-seqs.qza
  
 #Train Classifier

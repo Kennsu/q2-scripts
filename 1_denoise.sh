@@ -5,7 +5,7 @@
 ########## QIIME2 'Moving Pictures' Pipeline ##########
 
 ######Activate QIIME2 #####
-source activate qiime2-2018.2
+source activate qiime2-2018.4
 ###### VARIABLES ######
 
 METADATA="/bigdata/forKen/preeclampsia/metadataPE.txt"

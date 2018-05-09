@@ -21,7 +21,7 @@ PRIMER_R="GGACTACHVGGGTWTCTAAT"
 TRUNC=275
 
 ########################################
-
+echo "--------Generating Tree--------"
  ###### Generate Tree ######
  ###########################
  qiime alignment mafft \
@@ -41,7 +41,7 @@ TRUNC=275
   --o-rooted-tree rooted-tree.qza
  
  ###### Alpha & Beta Diversity Analysis #######
-
+echo "Starting Alpha $ Beta Diversity Analysis"
  ##############################################
  qiime diversity core-metrics-phylogenetic \
   --i-phylogeny rooted-tree.qza \
@@ -54,7 +54,7 @@ TRUNC=275
  #########################
  
  ###### Alpha Rarefaction Plotting ######
-
+echo "Plotting Alpha Rarefaction"
  ########################################
  qiime diversity alpha-rarefaction \
   --i-table table.qza \
@@ -73,7 +73,7 @@ TRUNC=275
  ################################
  
 ### Train Classifier ### 
- 
+ echo "Beginning to train classifier"
 #Extract Reads
  qiime feature-classifier extract-reads \
   --i-sequences $OTUS99 \
@@ -87,7 +87,7 @@ TRUNC=275
   --i-reference-reads ref-seqs.qza \
   --i-reference-taxonomy $REF_TAXONOMY \
   --o-classifier classifier.qza
-
+echo "running classifier"
 #Run Classifier
  qiime feature-classifier classify-sklearn \
   --i-classifier classifier.qza \
@@ -97,7 +97,7 @@ TRUNC=275
 qiime metadata tabulate \
   --m-input-file taxonomy.qza \
   --o-visualization taxonomy.qzv
-
+echo "Generating taxanomic bar plots"
 #Create Barplot of Taxonomic Composition
 qiime taxa barplot \
   --i-table table.qza \

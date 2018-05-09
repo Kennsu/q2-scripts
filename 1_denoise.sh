@@ -8,12 +8,12 @@
 source activate qiime2-2018.4
 ###### VARIABLES ######
 
-METADATA="/bigdata/forKen/preeclampsia/metadataPE.txt"
-MANIFEST="/bigdata/forKen/preeclampsia/manifest32_56.txt"
+METADATA="/home/banana/FR/Gao/metadata.txt"
+MANIFEST="/home/banana/FR/Gao/manifest"
 
 # Denoise #
-TRIM_F=6
-TRIM_R=6
+TRIM_F=20
+TRIM_R=17
 TRUNC_F=275
 TRUNC_R=275
 

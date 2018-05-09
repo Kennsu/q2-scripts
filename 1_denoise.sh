@@ -56,8 +56,13 @@ qiime dada2 denoise-paired \
   --p-trunc-len-r $TRUNC_R \
   --o-representative-sequences rep-seqs.qza \
   --o-table table.qza \
+  --o-denoising-stats stats-dada2.qza
   --p-n-threads 4 \
   --verbose
+  
+qiime metadata tabulate
+  --m-input-file stats-dada2.qza \
+  --o-output-file stats-dada2.qzv
   
  ###### Summarize FeatureTable & FeatureData ######
  #metadata (optional)                             #

@@ -8,16 +8,16 @@
 source activate qiime2-2018.4
 ###### VARIABLES ##########
 
-METADATA="/bigdata/forKen/preeclamsia/metadataPE.txt"
+METADATA="###########################"
 
 # Alpha & Beta Diversity #
-DEPTH=4397
+DEPTH=####
 
 # Taxonomy Analysis #
 REF_TAXONOMY='/bigdata/forKen/ClassifierTraining/ref-taxonomy.qza'
 OTUS99='/bigdata/forKen/ClassifierTraining/99_otus.qza'
-PRIMER_F="ACTCCTACGGGAGGCAGCAG"
-PRIMER_R="GGACTACHVGGGTWTCTAAT"
+PRIMER_F="AGAGTTTGATCCTGGCTCAG"
+PRIMER_R="ATTACCGCGGCTGCTGG"
 TRUNC=275
 
 ########################################

@@ -2,7 +2,7 @@
 # Lines starting with '#' are ignored and can be used to create
 # "comments" or even "comment out" entries
 
-source activate qiime2-2018.4
+source activate qiime2-2018.6
 
 ########### VARIABLES ##################
 COLUMN='XXXXXXXXXX'

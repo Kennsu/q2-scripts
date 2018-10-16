@@ -5,11 +5,11 @@
 ########## QIIME2 'Moving Pictures' Pipeline ##########
 
 ######Activate QIIME2 #####
-source activate qiime2-2018.6
+source activate qiime2-2018.8
 ###### VARIABLES ######
 
-METADATA="/home/banana/FR/Gao/metadata.txt"
-MANIFEST="/home/banana/FR/Gao/manifest"
+METADATA="metadata.txt"
+MANIFEST="./manifest"
 
 # Denoise #
 TRIM_F=20
@@ -35,7 +35,7 @@ qiime tools import \
   --type 'SampleData[PairedEndSequencesWithQuality]' \
   --input-path $MANIFEST \
   --output-path demux.qza \
-  --source-format PairedEndFastqManifestPhred33 \
+  --input-format PairedEndFastqManifestPhred33 \
 
 qiime demux summarize \
   --i-data demux.qza \

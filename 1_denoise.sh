@@ -62,7 +62,7 @@ qiime dada2 denoise-paired \
   
 qiime metadata tabulate
   --m-input-file stats-dada2.qza \
-  --o-output-file stats-dada2.qzv
+  --o-visualization stats-dada2.qzv
   
  ###### Summarize FeatureTable & FeatureData ######
  #metadata (optional)                             #

@@ -57,7 +57,7 @@ qiime dada2 denoise-paired \
   --p-trunc-len-r $TRUNC_R \
   --o-representative-sequences rep-seqs.qza \
   --o-table table.qza \
-  --o-denoising-stats stats-dada2.qza
+  --o-denoising-stats stats-dada2.qza \
   --p-n-threads 4 \
   --verbose
   

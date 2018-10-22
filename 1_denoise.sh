@@ -9,7 +9,7 @@ source activate qiime2-2018.8
 ###### VARIABLES ######
 
 METADATA="metadata.txt"
-MANIFEST="./manifest"
+MANIFEST="manifest"
 
 # Denoise #
 TRIM_F=20
@@ -48,6 +48,7 @@ qiime demux summarize \
 #threads
 #trunc-len-r
 ###################
+echo "Begin Dada2..."
 qiime dada2 denoise-paired \
   --i-demultiplexed-seqs demux.qza \
   --p-trim-left-f $TRIM_F \

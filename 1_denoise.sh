@@ -61,7 +61,7 @@ qiime dada2 denoise-paired \
   --p-n-threads 4 \
   --verbose
   
-qiime metadata tabulate
+qiime metadata tabulate \
   --m-input-file stats-dada2.qza \
   --o-visualization stats-dada2.qzv
   

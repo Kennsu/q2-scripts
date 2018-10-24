@@ -5,7 +5,7 @@
 ########## QIIME2 'Moving Pictures' Pipeline ##########
 
 ######Activate QIIME2 #####
-source activate qiime2-2018.6
+source activate qiime2-2018.8
 ###### VARIABLES ##########
 
 METADATA="###########################"

@@ -12,8 +12,8 @@ METADATA="metadata.txt"
 MANIFEST="manifest"
 
 # Denoise #
-TRIM_F=20
-TRIM_R=17
+TRIM_F=0
+TRIM_R=0
 TRUNC_F=275
 TRUNC_R=275
 

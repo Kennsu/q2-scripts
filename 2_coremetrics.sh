@@ -79,7 +79,6 @@ echo "Plotting Alpha Rarefaction"
   --i-sequences $OTUS99 \
   --p-f-primer $PRIMER_F \
   --p-r-primer $PRIMER_R \
-  --p-trunc-len $TRUNC \
   --o-reads ref-seqs.qza
  
 #Train Classifier

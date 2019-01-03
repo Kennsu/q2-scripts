@@ -14,8 +14,8 @@ MANIFEST="manifest"
 # Denoise #
 TRIM_F=20
 TRIM_R=17
-TRUNC_F=275
-TRUNC_R=275
+TRUNC_F=280
+TRUNC_R=280
 
 #######################
 
@@ -55,6 +55,7 @@ qiime dada2 denoise-paired \
   --p-trim-left-r $TRIM_R \
   --p-trunc-len-f $TRUNC_F \
   --p-trunc-len-r $TRUNC_R \
+  --p-max-ee 4.0 \
   --o-representative-sequences rep-seqs.qza \
   --o-table table.qza \
   --o-denoising-stats stats-dada2.qza \
